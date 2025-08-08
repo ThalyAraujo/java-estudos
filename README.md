@@ -5,7 +5,7 @@ Aqui vou reunir projetos simples, focados em aprendizado prático, resolução d
 
 ---
 
-## 📌 Projeto atual
+## 📌 Projetos atuais
 
 ### 💰 MenuBanco
 
@@ -18,7 +18,22 @@ O usuário pode consultar o saldo, fazer depósitos e saques, com validações b
 - Sacar com verificação de saldo insuficiente
 - Menu interativo via terminal (`Scanner`, `switch/case`, `do...while`)
 
-#### Tecnologias utilizadas:
+---
+
+### 🧮 Calculadora
+
+Calculadora simples que realiza operações básicas diretamente no terminal.  
+O usuário escolhe a operação desejada e insere os dois valores.
+
+#### Funcionalidades:
+- Adição, subtração, multiplicação e divisão
+- Validação para divisão por zero
+- Estrutura com métodos separados para cada operação (`add`, `subtract`, `multiply`, `divide`)
+- Menu interativo com repetição (`while`) e controle com `switch/case`
+
+---
+
+#### Tecnologias utilizadas nos projetos:
 
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
 ![Eclipse](https://img.shields.io/badge/Eclipse_IDE-2C2255?style=for-the-badge&logo=eclipse&logoColor=white)
@@ -29,7 +44,6 @@ O usuário pode consultar o saldo, fazer depósitos e saques, com validações b
 
 🛠 Conforme o aprendizado avança, novos diretórios e projetos serão adicionados, como:
 
-- Calculadora
 - Conversor de moedas
 - Jogo simples em texto
 - APIs básicas com Java
