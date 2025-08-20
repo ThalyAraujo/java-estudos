@@ -1,31 +1,54 @@
 import java.util.Scanner;
+import java.util.InputMismatchException;
 
 public class SimpleCalculator {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
         boolean continueCalculation = true;
+
         while (continueCalculation) {
 
-        System.out.println("Escolha a operação:");
-        System.out.println("1. Adição");
-        System.out.println("2. Subtração");
-        System.out.println("3. Multiplicação");
-        System.out.println("4. Divisão");
-        System.out.println("5. Sair");
-        int choice = scanner.nextInt();
+            System.out.println("Escolha a operação:");
+            System.out.println("1. Adição");
+            System.out.println("2. Subtração");
+            System.out.println("3. Multiplicação");
+            System.out.println("4. Divisão");
+            System.out.println("5. Sair");
+            
+            int choice = 0;
 
-        if (choice == 5) {
-            continueCalculation = false;
-            System.out.println("Saindo da calculadora.");
-            continue;
-        }
+            try {
+                choice = scanner.nextInt();
+            } catch (InputMismatchException e) {
+                System.out.println("Entrada inválida. Por favor, insira um número entre 1 e 5.");
+                scanner.next();
+                continue;
+            }
 
-        System.out.println("Digite o primeiro número:");
-        double num1 = scanner.nextDouble();
+            if (choice == 5) {
+                continueCalculation = false;
+                System.out.println("Saindo da calculadora.");
+                continue;
+            }
 
-        System.out.println("Digite o segundo número:");
-        double num2 = scanner.nextDouble();
+            if (choice < 1 || choice > 5) {
+                System.out.println("Operação inválida. Por favor, escolha 1, 2, 3, 4 ou 5.");
+                continue; 
+            }
+
+            double num1 = 0;
+            double num2 = 0;
+
+            try {
+                System.out.print("Digite o primeiro número: ");
+                num1 = scanner.nextDouble();
+                System.out.print("Digite o segundo número: ");
+                num2 = scanner.nextDouble();
+            } catch (InputMismatchException e) {
+                System.out.println("Entrada inválida. Por favor, insira números válidos.");
+                scanner.next();
+                continue;
+            }
 
         switch (choice) {
             case 1:
