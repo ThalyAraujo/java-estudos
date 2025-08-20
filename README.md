@@ -62,3 +62,70 @@ Praticar Java com foco em:
 ---
 
 > Feito com ☕ e curiosidade por Nátaly 😄
+
+---
+
+# ☕ Java Studies
+
+This repository is dedicated to my studies in Java.  
+Here I will gather simple projects focused on hands-on learning, problem solving, and strengthening programming logic with Java.
+
+---
+
+## 📌 Current Projects
+
+### 💰 BankMenu
+
+A simple simulation of a bank account menu in the terminal.  
+The user can check the balance, make deposits, and withdraw money, with basic input validations.
+
+#### Features:
+- Check balance
+- Deposit with invalid value validation
+- Withdraw with insufficient balance validation
+- Interactive menu via terminal (`Scanner`, `switch/case`, `do...while`)
+
+---
+
+### 🧮 Calculator
+
+A simple calculator that performs basic operations directly in the terminal.  
+The user chooses the desired operation and enters two values.
+
+#### Features:
+- Addition, subtraction, multiplication, and division
+- Validation for division by zero
+- Separate methods for each operation (`add`, `subtract`, `multiply`, `divide`)
+- Interactive menu with repetition (`while`) and `switch/case` control
+
+---
+
+#### Technologies used in the projects:
+
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
+![Eclipse](https://img.shields.io/badge/Eclipse_IDE-2C2255?style=for-the-badge&logo=eclipse&logoColor=white)
+
+---
+
+## 📂 Future Repository Organization
+
+🛠 As learning progresses, new directories and projects will be added, such as:
+
+- Currency converter
+- Simple text-based game
+- Basic APIs with Java
+- Projects with graphical interface (in the future)
+
+---
+
+## 🧠 Goal
+
+Practice Java focusing on:
+- Control structures
+- Input and output handling
+- Programming logic
+- Creating small, useful, and functional projects
+
+---
+
+> Made with ☕ and curiosity by Nátaly 😄
